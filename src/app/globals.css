@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   VELORA — design tokens
+   A restrained palette: ivory, pearl, champagne, stone, muted gold,
+   deep espresso. Metallics are used sparingly.
+------------------------------------------------------------------- */
+@theme {
+  --color-pearl: #fbf9f5;
+  --color-ivory: #f4efe6;
+  --color-champagne: #e7dccb;
+  --color-sand: #d8cbb6;
+  --color-stone: #a39684;
+  --color-taupe: #6e6253;
+  --color-gold: #a8895c;
+  --color-gold-soft: #c9b28c;
+  --color-espresso: #1b1611;
+  --color-ink: #2a221b;
+  --color-night: #120f0c;
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jost), "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-silk: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.4;
+  --text-display: clamp(3.5rem, 11vw, 12rem);
+  --text-display--line-height: 0.88;
+  --text-headline: clamp(2.5rem, 6.2vw, 6.5rem);
+  --text-headline--line-height: 0.95;
+  --text-title: clamp(1.75rem, 3.2vw, 3.25rem);
+  --text-title--line-height: 1.05;
+
+  --tracking-luxe: 0.32em;
+  --tracking-wide2: 0.18em;
+}
+
+:root {
+  --header-h: 76px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-espresso);
+  color: var(--color-ivory);
+}
+
+:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* ------------------------------------------------------------------
+   Typography utilities
+------------------------------------------------------------------- */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  font-weight: 400;
+  letter-spacing: var(--tracking-luxe);
+  text-transform: uppercase;
+}
+
+@utility serif-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+@utility gutter-x {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+/* Elegant animated underline used across nav and text links */
+@utility link-line {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.3em;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s var(--ease-luxe);
+  }
+  &:hover::after,
+  &:focus-visible::after,
+  &[aria-current="page"]::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Soft grain to give flat colour fields a printed, tactile quality */
+@utility grain {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    z-index: 1;
+  }
+}
+
+/* Travelling specular highlight — gives photography a metallic glint */
+@keyframes velora-sweep {
+  0%,
+  55% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+.light-sweep {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+}
+.light-sweep::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  width: 45%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 248, 235, 0.55) 45%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 248, 235, 0.55) 55%,
+    transparent
+  );
+  animation: velora-sweep 7.5s var(--ease-silk) infinite;
+}
+
+/* Scroll cue line */
+@keyframes velora-scroll-line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.scroll-line {
+  animation: velora-scroll-line 2.8s var(--ease-silk) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.2s !important;
+    scroll-behavior: auto !important;
+  }
+  .light-sweep {
+    display: none;
+  }
+}
+
+@media (pointer: fine) {
+  .has-custom-cursor,
+  .has-custom-cursor a,
+  .has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+/* Loader is skipped for returning visitors within a session */
+.velora-seen .velora-loader {
+  display: none;
+}
+
+/* JS-driven intro: elements start hidden only when JS is present */
+.js [data-intro] {
+  opacity: 0;
+}
