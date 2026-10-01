@@ -155,15 +155,30 @@ export const RAW_PRODUCTS: RawProduct[] = [
       "Each piece is unique; slight variations are part of its character",
     ],
     care: CARE_METAL,
-    // Placeholder: the only photograph supplied for this SKU is worn on a model,
-    // which the VELORA brand rules exclude. Replace with product-only photography.
+    // Studio renders (scripts/render) — the only photograph supplied for this SKU
+    // was worn on a model, which the brand rules exclude. Re-run `npm run render`
+    // after design tweaks, or replace with product photography when available.
     images: [
       {
-        src: "/placeholders/velora-product-03.webp",
-        alt: "Nuit cuff — product photography coming soon",
-        width: 1200,
-        height: 1500,
-        placeholder: true,
+        src: "/products/product-03/portrait.webp",
+        alt: "Nuit cuff with lapis-style cabochons and turquoise-style bead clusters on a travertine plinth",
+        width: 1600,
+        height: 2000,
+        focal: "50% 55%",
+      },
+      {
+        src: "/products/product-03/still.webp",
+        alt: "Nuit cuff seen from the front: lapis-style cabochons, chased star diamonds and beaded borders",
+        width: 2000,
+        height: 1520,
+        focal: "50% 50%",
+      },
+      {
+        src: "/products/product-03/detail.webp",
+        alt: "Close detail of a Nuit cuff lapis-style cabochon framed by turquoise-style beads with coral-red centres",
+        width: 2000,
+        height: 1150,
+        focal: "45% 50%",
       },
     ],
     isNew: true,

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
-    "images": "node scripts/process-images.mjs"
+    "images": "node scripts/process-images.mjs",
+    "render": "node scripts/render-products.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -28,6 +29,7 @@
     "@types/three": "^0.186.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "playwright": "^1.56.1",
     "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5"

@@ -10,6 +10,7 @@ npm run build      # production build
 npm run lint
 npm run typecheck
 npm run images     # re-crop product photography from /assets/originals
+npm run render     # re-render studio shots for the Nuit Cuff (scripts/render/)
 ```
 
 ## Replacing / adding product photography
@@ -29,10 +30,14 @@ Current state:
 | --- | --- | --- |
 | VEL-CF-001 | Ailes Cuff | Cropped from the campaign image, with the baked-in text removed |
 | VEL-CF-002 | Étoile Cuff | Product still (hero of the 3D showroom texture) |
-| VEL-CF-003 | Nuit Cuff (lapis) | **Placeholder.** The only photo supplied shows it on a wrist |
+| VEL-CF-003 | Nuit Cuff (lapis) | Studio renders made with `npm run render`; the only photo supplied showed it worn |
 | VEL-XX-004 | Reserved slot | Draft (`published: false`) |
 
 Higher-resolution originals (≥ 2400px on the long edge) will noticeably sharpen the full-screen scenes.
+
+## Studio renders
+
+`scripts/render/studio.js` builds the Nuit Cuff procedurally in Three.js: an oxidised band with granulation and chased stars, real domed lapis, turquoise and coral cabochons in bezels, and a travertine plinth under studio light. `npm run render` renders it in headless Chromium, supersampled, and writes `public/products/product-03/{portrait,still,detail}.webp`. Adjust the stone layout (`STONES`), the palette or the camera framing (`SHOTS`) and re-run.
 
 ## Architecture
 
