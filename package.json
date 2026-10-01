@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "images": "node scripts/process-images.mjs",
-    "render": "node scripts/render-products.mjs"
+    "render": "node scripts/render-products.mjs",
+    "export:pages": "bash scripts/export-pages.sh"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

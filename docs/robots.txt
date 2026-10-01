@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /checkout
+
+Sitemap: https://usamaibneabbas.github.io/Velora-jewellery/sitemap.xml

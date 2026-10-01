@@ -11,6 +11,7 @@ import { PackagingExperience } from "@/components/home/PackagingExperience";
 import { ProductGrid } from "@/components/home/ProductGrid";
 import { ProductStory } from "@/components/home/ProductStory";
 import { ShowcaseScene } from "@/components/home/ShowcaseScene";
+import { asset } from "@/lib/asset";
 
 /**
  * Homepage art direction — which product appears in which scene.
@@ -46,7 +47,7 @@ export default async function HomePage() {
       <HorizontalCollection products={latest} />
       <MacroDetail image={macro.images[0]} />
       <CraftSection images={[ailes.images[2] ?? ailes.featuredImage, macro.images[2] ?? macro.featuredImage, macro.images[1] ?? macro.featuredImage]} />
-      <ShowcaseScene product={showcase} textureUrl="/textures/band-bamiyan.webp" />
+      <ShowcaseScene product={showcase} textureUrl={asset("/textures/band-bamiyan.webp")} />
       <BrandStatement />
       <ProductGrid products={all} />
       <PackagingExperience image={packaging.images[1] ?? packaging.featuredImage} />

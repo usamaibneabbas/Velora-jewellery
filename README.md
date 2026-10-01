@@ -13,6 +13,13 @@ npm run images     # re-crop product photography from /assets/originals
 npm run render     # re-render studio shots for the Nuit Cuff (scripts/render/)
 ```
 
+## Live preview (GitHub Pages)
+
+`npm run export:pages` builds a static export into `docs/`, served by GitHub Pages at
+https://usamaibneabbas.github.io/Velora-jewellery/
+(Settings → Pages → Deploy from a branch → `claude/velora-luxury-website-3swy1h` → `/docs`).
+Re-run it and push after changes. The normal `npm run build` stays a full Next.js build for Vercel or Node hosting.
+
 ## Replacing / adding product photography
 
 1. Put originals in `assets/originals/` and add crop entries to `scripts/process-images.mjs`

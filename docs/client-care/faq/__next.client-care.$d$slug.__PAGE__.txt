@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:I[7477,["592","static/chunks/c15bf2b0-0b7ccb01d0221f08.js","632","static/chunks/632-da3b6af2774c1a07.js","30","static/chunks/app/client-care/%5Bslug%5D/page-2fd90d1115dc6e5e.js"],"RevealText"]
+3:I[484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[484,[],"ViewportBoundary"]
+9:I[484,[],"MetadataBoundary"]
+7:X
+10:X
+10:C
+0:{"buildId":"82ZQ_T__P9ncmCa5xWzMP","data":[{"rsc":["$","$1","c",{"children":[["$","section",null,{"data-header":"light","className":"bg-ivory pb-40 pt-[calc(var(--header-h)+12vh)] text-ink","children":["$","div",null,{"className":"gutter-x mx-auto grid max-w-[1680px] gap-16 md:grid-cols-12","children":[["$","div",null,{"className":"md:col-span-5","children":[["$","p",null,{"className":"eyebrow mb-6 opacity-50","children":"Client Care"}],["$","$L2",null,{"as":"h1","className":"serif-display text-headline uppercase","children":"FAQ"}],["$","p",null,{"className":"mt-8 max-w-sm text-[15px] leading-relaxed opacity-75","children":"Answers to the questions we are asked most often."}]]}],["$","dl",null,{"className":"md:col-span-6 md:col-start-7","children":[["$","div","Will the cuff fit me?",{"className":"border-t border-espresso/15 py-8","children":[["$","dt",null,{"className":"font-serif text-2xl","children":"Will the cuff fit me?"}],["$","dd",null,{"className":"mt-3 max-w-lg text-sm leading-relaxed opacity-75","children":"VELORA cuffs are open and gently adjustable. Ease the cuff open or closed slightly with both hands — never at a single point."}]]}],["$","div","Is each piece identical?",{"className":"border-t border-espresso/15 py-8","children":[["$","dt",null,{"className":"font-serif text-2xl","children":"Is each piece identical?"}],["$","dd",null,{"className":"mt-3 max-w-lg text-sm leading-relaxed opacity-75","children":"No. Each piece is finished by hand, so small variations in stones and patina are part of its character."}]]}],["$","div","How should I care for my piece?",{"className":"border-t border-espresso/15 py-8","children":[["$","dt",null,{"className":"font-serif text-2xl","children":"How should I care for my piece?"}],["$","dd",null,{"className":"mt-3 max-w-lg text-sm leading-relaxed opacity-75","children":"Keep it dry, away from perfume and lotions, and store it in the VELORA pouch. Wipe with a soft dry cloth."}]]}]]}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#1b1611"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"FAQ — VELORA"}],["$","meta","1",{"name":"description","content":"Answers to the questions we are asked most often."}],["$","meta","2",{"name":"application-name","content":"VELORA"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","link","4",{"rel":"canonical","href":"https://usamaibneabbas.github.io/Velora-jewellery/client-care/faq"}],["$","meta","5",{"property":"og:title","content":"VELORA — Objects of Quiet Distinction"}],["$","meta","6",{"property":"og:description","content":"VELORA is a European jewellery house creating handmade objects of quiet distinction — refined cuffs and statement pieces made to be remembered."}],["$","meta","7",{"property":"og:site_name","content":"VELORA"}],["$","meta","8",{"property":"og:locale","content":"en_GB"}],["$","meta","9",{"property":"og:image","content":"https://usamaibneabbas.github.io/Velora-jewellery/products/product-02/portrait.webp"}],["$","meta","10",{"property":"og:image:width","content":"1122"}],["$","meta","11",{"property":"og:image:height","content":"1402"}],["$","meta","12",{"property":"og:image:alt","content":"VELORA Étoile cuffs on stone"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"VELORA — Objects of Quiet Distinction"}],["$","meta","16",{"name":"twitter:description","content":"VELORA is a European jewellery house creating handmade objects of quiet distinction — refined cuffs and statement pieces made to be remembered."}],["$","meta","17",{"name":"twitter:image","content":"https://usamaibneabbas.github.io/Velora-jewellery/products/product-02/portrait.webp"}],"$La","$Lb"]}]}]}],"$Lc"]}],"isPartial":"$@d","staleTime":"$7","varyParams":null},{"rsc":"$Le","isPartial":"$@f","staleTime":"$7","varyParams":"$10"},{"rsc":"$L11","isPartial":"$@12","staleTime":"$7","varyParams":"$10"}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+15:I[6869,[],"IconMark"]
+16:I[7121,[],""]
+17:I[4581,[],""]
+5:null
+a:["$","link","18",{"rel":"icon","href":"/Velora-jewellery/icon.svg?eb0c29d92cec7ad1","type":"image/svg+xml","sizes":"any"}]
+b:["$","$L15","19",{}]
+c:["$","meta",null,{"name":"next-size-adjust","content":""}]
+e:["$","$1","c",{"children":[null,["$","$L16",null,{"parallelRouterKey":"children","template":["$","$L17",null,{}]}]]}]
+11:["$","$1","c",{"children":[null,["$","$L16",null,{"parallelRouterKey":"children","template":["$","$L17",null,{}]}]]}]
+14:true
+7:300
+7:C
+13:0
+d:"$undefined"
+f:"$undefined"
+12:"$undefined"
+6:"$undefined"
